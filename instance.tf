@@ -14,4 +14,9 @@ resource "aws_instance" "aws_sko_demo" {
     Name  = "aws-sko-demo"
     Owner = "harkirat"
   }
+
+  metadata_options {
+    http_endpoint = "disabled"
+    http_tokens   = "required"
+  }
 }
