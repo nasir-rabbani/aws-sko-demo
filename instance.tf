@@ -9,7 +9,7 @@ resource "aws_instance" "aws_sko_demo" {
   monitoring    = true
   ebs_optimized = true
 
-  associate_public_ip_address = true
+  associate_public_ip_address = var.data
   tags = {
     Name  = "aws-sko-demo"
     Owner = "harkirat"
